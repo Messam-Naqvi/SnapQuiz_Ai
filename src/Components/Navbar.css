@@ -1,0 +1,141 @@
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(to right, #9d0404 25%, #040404 69%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+   
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(243, 238, 238);
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-toggler:hover {
+    background-color: #e6e6e6;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212529;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.nav-link:hover {
+    background-color: #1a1919;
+    border-radius: 20px; /* Add border-radius for rounded hover effect */
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    font-size: 16px;
+    color: rgb(41, 33, 33);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.dropdown-item:hover {
+    background-color: #e6e6e6;
+}
+
+/* Hover effects and animations */
+
+.nav-item:hover .nav-link,
+.dropdown-menu li:hover .dropdown-item {
+    color: #fafafa;
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navbar-brand:hover {
+    animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        transform: translate3d(0, -10px, 0);
+    }
+    40% {
+        transform: translate3d(0, 10px, 0);
+    }
+    60% {
+        transform: translate3d(0, -5px, 0);
+    }
+    80% {
+        transform: translate3d(0, 5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.search-button:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    40% {
+        transform: translate3d(5px, 0, 0);
+    }
+    60% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    80% {
+        transform: translate3d(5px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}

@@ -1,0 +1,38 @@
+.container1 {
+    animation: moveUpDown 1s infinite alternate;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
+  .btn-3d {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .btn-3d:hover {
+    transform: translate(0, -4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-3d:active {
+    transform: translate(0, 0);
+    box-shadow: none;
+  }
+  

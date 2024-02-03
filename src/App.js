@@ -11,7 +11,8 @@ function App() {
       <div className="heiback">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>

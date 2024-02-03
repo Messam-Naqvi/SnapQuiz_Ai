@@ -1,5 +1,6 @@
 {
   "name": "quiz",
+  "homepage": "https://Messam-Naqvi.github.io/SnapQuiz-react-py",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +25,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "concurrently \"npm run start-react\" \"npm run start-flask\"",
+    "start-react": "react-scripts start",
+    "start-flask": "python app.py",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
